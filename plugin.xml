@@ -25,7 +25,10 @@
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         </config-file>
        <source-file src="src/android/LogToFile.java" target-dir="src/org/apache/cordova/logtofile/" />
-       <framework src="src/android/log4j.gradle" custom="true" type="gradleReference"/>
+        <source-file src="src/android/android-logging-log4j-1.0.3.jar" target-dir="libs" framework="true" />
+        <source-file src="src/android/log4j-1.2.17.jar" target-dir="libs" framework="true" />
+        <source-file src="src/android/slf4j-log4j12-1.7.4.jar" target-dir="libs" framework="true" />
+       <!--framework src="src/android/log4j.gradle" custom="true" type="gradleReference"/-->
     </platform>
 
 </plugin>
